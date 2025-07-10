@@ -1,3 +1,8 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
 body{
     font-family: Nunito, sans-serif;
     background-color: white;
@@ -40,6 +45,7 @@ body{
     margin-left: 50px;
     text-decoration: none;
     color: black;
+    
 }
 
 .tab a:hover{
@@ -47,4 +53,22 @@ body{
     border-radius: 5px;
     background-color: royalblue;
     color: white;
+    
+}
+
+
+.social a{
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.copyright{
+    margin-right: 40%;
 }
