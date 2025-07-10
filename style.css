@@ -1,0 +1,50 @@
+body{
+    font-family: Nunito, sans-serif;
+    background-color: white;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+
+.line{
+    background-color: whitesmoke;
+}
+
+.container{
+    width: 100%;
+    height: 50vh;
+}
+
+.intro{
+    margin-top: 50px;
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+.name{
+    color: royalblue;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: medium;
+    align-items: center;
+}
+
+.tab{
+    padding-right: 60px;
+}
+.tab a{
+    margin-left: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.tab a:hover{
+    border: 5px solid royalblue;
+    border-radius: 5px;
+    background-color: royalblue;
+    color: white;
+}
