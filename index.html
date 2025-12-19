@@ -1,64 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Samar Raj - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: "Nunito", sans-serif;
+      }
+
+      .nunito-body {
+        font-family: "Nunito", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 90px;
+        background-color: rgb(2, 2, 45);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 0 25px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul li a:hover {
+        color: blueviolet;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+
+      main hr {
+        border: 0;
+        background: rgb(55, 2, 102);
+        height: 1.2px;
+        margin: 40px 80px;
+      }
+
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 25px 0;
+      }
+
+      .firstSection > div {
+        width: 30%;
+      }
+
+      .leftSection {
+        font-size: 3rem;
+        margin: 80px 0;
+      }
+
+      #element {
+        color: blueviolet;
+      }
+
+      .secondSection {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+        height: 50vh;
+      }
+
+      .secondSection h1 {
+        font-size: 2rem;
+      }
+
+      .secondSection p {
+        font-size: 18px;
+        line-height: 1.7;
+      }
+
+      p + p {
+        margin-top: 20px;
+      }
+
+      .thirdSection {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+        height: 80vh;
+      }
+
+      .thirdSection h1 {
+        font-size: 2rem;
+      }
+
+      .thirdSection .box {
+        background: white;
+        width: 80vw;
+        height: 2px;
+        margin: 55px 0;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .thirdSection .vertical {
+        background: white;
+        height: 80px;
+        width: 1px;
+      }
+
+      .image-top {
+        width: 28px;
+        position: relative;
+        top: -38px;
+        left: -13px;
+      }
+
+      .vertical-text {
+        position: relative;
+        top: 42px;
+        left: -57px;
+        width: 150px;
+      }
+
+      .vertical-desc {
+        position: relative;
+        top: 45px;
+        left: -77px;
+        font-size: 12px;
+        width: 200px;
+        color: blueviolet;
+      }
+      footer {
+        background-color: rgb(5, 5, 46);
+        height: 200px;
+      }
+      .footer {
+        display: flex;
+        padding: 20px 150px;
+        justify-content: space-between;
+      }
+      footer ul {
+        list-style: none;
+      }
+      footer ul li {
+        line-height: 2;
+      }
+      .footer > div {
+        width: 300px;
+      }
+
+      .text-center {
+        background-color: rgb(5, 5, 46);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
     <header>
-        <div class="navbar">
-            <div class="logo">Samar
-            </div>
-            <nav class="tab">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-                <a href="blog">Blogs</a>
-            </nav>
+      <nav class="headnav">
+        <div class="left">Samar Raj</div>
+        <div class="right">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li>
+              <a href="https://github.com/samar-raj10" target="_blank"
+                >Projects</a
+              >
+            </li>
+            <li><a href="#footer-box">Contact Me</a></li>
+          </ul>
         </div>
+      </nav>
     </header>
-    <hr class="line">
-    <div class="container" id="home">
-       <p class="intro">
-        Hey!,<br>
-        I'am <span class="name">Samar</span><br>
-        Software Developer<br>
-       </p>
-    </div>
-    <section id ="about">
-        <h2>About Me</h2>
-        <p>
-            Hello! I'm Samar Raj, a passionate student pursuing my dream to become a Software Developer. Currently studying at Manipal University Jaipur, I am dedicated to honing my skills in programming and software engineering.</p>
 
-        <p>In my academic journey, I've been fortunate to delve into various aspects of software development, gaining proficiency in languages like Java, C++, Python and exploring innovative solutions to real-world challenges.</p>
-
-        <p>Beyond academics, I find joy in playing cricket, which fuels my competitive spirit and teamwork mindset—qualities that I believe are crucial in both sports and software development.</p>
-
-        <p>I am eager to contribute my skills and enthusiasm to the tech industry, aiming to make a meaningful impact through creative problem-solving and continuous learning. Let's connect and explore opportunities to collaborate and grow together!
-        </p>
-    <footer>
-        <div class="footer">
-            <div class="social">
-                <a href="mailto:yourmail@gmail.com" target="_blank">
-                <img src="https://img.icons8.com/ios-glyphs/30/000000/gmail.png" alt="Gmail" />
-                </a>
-                <a href="https://www.linkedin.com/in/yourusername" target="_blank">
-                <img src="https://img.icons8.com/ios-filled/30/000000/linkedin.png" alt="LinkedIn" />
-                </a>
-                <a href="https://github.com/yourusername" target="_blank">
-                <img src="https://img.icons8.com/ios-glyphs/30/000000/github.png" alt="GitHub" />
-                </a>
-            </div>
-            <div class="copyright">
-                Copyright &copy; 2025 Samar Raj. All rights reserved.
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hey! I'm <span class="span">Samar</span>
+          <div>a passionate</div>
+          <span id="element"></span>
         </div>
+        <div class="rightSection">
+          <img src="/assets/bg.png" alt="dev img" height="500px" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection" id="about">
+        <span class="secondspan">Let's explore my journey</span>
+        <h1>About Me</h1>
+        <p>
+          Hello! I'm Samar Raj, a passionate student pursuing my dream to become
+          a Software Developer. Currently studying at Manipal University Jaipur,
+          I am dedicated to honing my skills in programming and software
+          engineering. In my academic journey, I've been fortunate to delve into
+          various aspects of software development, gaining proficiency in
+          languages like Java, C++, Python and exploring innovative solutions to
+          real-world challenges.
+        </p>
+        <p>
+          Beyond academics, I find joy in playing cricket, which fuels my
+          competitive spirit and teamwork mindset—qualities that I believe are
+          crucial in both sports and software development. I am eager to
+          contribute my skills and enthusiasm to the tech industry, aiming to
+          make a meaningful impact through creative problem-solving and
+          continuous learning. Let's connect and explore opportunities to
+          collaborate and grow together!
+        </p>
+      </section>
+      <hr />
+      <section class="thirdSection" id="skills">
+        <span class="thirdspan">Let us know about my skills</span>
+        <h1>Skills</h1>
+
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="/assets/C_Logo.png" alt="c logo" />
+            <div class="vertical-text">C Programming:</div>
+            <div class="vertical-desc">
+              Strong understanding of core C concepts including data types,
+              pointers, arrays, structures, and dynamic memory allocation.
+              Experienced in writing efficient procedural programs, implementing
+              basic data structures, and solving logical problems using C.
+            </div>
+          </div>
+          <div class="vertical">
+            <img
+              class="image-top-second"
+              src="/assets/java-seeklogo.png"
+              alt="java logo"
+            />
+            <div class="vertical-text-second">Java Programming:</div>
+            <div class="vertical-desc-second">
+              Good understanding of object-oriented programming concepts such as
+              classes, objects, inheritance, polymorphism, and encapsulation.
+              Familiar with writing console-based applications and solving
+              problems using Java.
+            </div>
+          </div>
+          <div class="vertical">
+            <img
+              class="image-top-third"
+              src="/assets/c++ logo.png"
+              alt="cpp logo"
+            />
+            <div class="vertical-text-third">C++ Programming:</div>
+            <div class="vertical-desc-third">
+              Strong foundation in C++ with hands-on experience in implementing
+              data structures such as arrays, linked lists, stacks, and queues.
+              Comfortable with object-oriented programming concepts and using
+              C++ for problem-solving and algorithmic practice.
+            </div>
+          </div>
+          <div class="vertical"></div>
+          <div class="vertical"></div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer-box">
+      <div class="footer">
+        <div class="first-footer">Samar's Developer Portfolio</div>
+        <div class="second-footer">
+          <ul>
+            <li>Linkedin</li>
+            <li>Instagram</li>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Mail</li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center">&copy;Samar Raj. All Rights Reserved</div>
     </footer>
-</body>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Software Developer", "Web Designer"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
 </html>

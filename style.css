@@ -1,74 +1,67 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-
-body{
-    font-family: Nunito, sans-serif;
-    background-color: white;
-    padding-left: 60px;
-    padding-right: 60px;
+* {
+  user-select: none;
 }
 
-
-.line{
-    background-color: whitesmoke;
+.span {
+  color: blueviolet;
 }
 
-.container{
-    width: 100%;
-    height: 50vh;
+.secondspan {
+  color: blueviolet;
+  font-size: 1 rem;
 }
 
-.intro{
-    margin-top: 50px;
-    font-weight: 900;
-    font-size: xx-large;
+.thirdspan {
+  color: blueviolet;
+  font-size: 1rem;
 }
 
-.name{
-    color: royalblue;
+.image-top-second {
+  width: 28px;
+  position: relative;
+  top: -58px;
+  left: -12px;
 }
 
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    font-weight: bold;
-    font-size: medium;
-    align-items: center;
+.vertical-text-second {
+  position: relative;
+  top: 20px;
+  left: -72px;
+  width: 150px;
 }
 
-.tab{
-    padding-right: 60px;
-}
-.tab a{
-    margin-left: 50px;
-    text-decoration: none;
-    color: black;
-    
-}
-
-.tab a:hover{
-    border: 5px solid royalblue;
-    border-radius: 5px;
-    background-color: royalblue;
-    color: white;
-    
+.vertical-desc-second {
+  position: relative;
+  top: 25px;
+  left: -84px;
+  font-size: 12px;
+  width: 200px;
+  color: blueviolet;
 }
 
-
-.social a{
-    text-decoration: none;
-    margin-right: 10px;
+.image-top-third{
+  width: 32px;
+  position: relative;
+  top: -36px;
+  left: -16px;
 }
 
-.footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 50px;
+.vertical-text-third {
+  position: relative;
+  top: 39px;
+  left: -72px;
+  width: 150px;
 }
 
-.copyright{
-    margin-right: 40%;
+.vertical-desc-third {
+  position: relative;
+  top: 43px;
+  left: -84px;
+  font-size: 12px;
+  width: 200px;
+  color: blueviolet;
 }
